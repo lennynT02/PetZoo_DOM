@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PetZoo</title>
+</head>
+
+<body>
+    <div class="container registrar">
+        <div class="informacion">
+            <div class="info">
+                <h2>Bienvenido a PetZoo</h2>
+                <p>Ingresa tus datos para iniciar sesión</p>
+                <input type="button" id="inicio" value="Iniciar Sesion">
+            </div>
+        </div>
+        <div class="login">
+            <div class="login-form">
+                <h2>Crear una cuenta</h2>
+                <div class="icon">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-microsoft' ></i>
+                </div>
+                <p>o usa tu correo para registrarte</p>
+                <form action="" class="form">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Nombre Completo">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock ' ></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hide iniciar">
+        <div class="informacion">
+            <div class="info">
+                <h2>Bienvenido nuevamente</h2>
+                <p>Para unirte a nosotros, registrate con tus datos</p>
+                <input type="button" id="registro" value="Registrarse">
+            </div>
+        </div>
+        <div class="login">
+            <div class="login-form">
+                <h2>Iniciar Sesion</h2>
+                <div class="icon">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-microsoft' ></i>
+                </div>
+                <p>o Iniciar Sesion con una cuenta</p>
+                <form action="" class="form">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock ' ></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar Sesion">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

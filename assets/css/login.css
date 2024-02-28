@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    background-image: url(../img/peluqueria.png);
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 5px 7px rgb(0, 0, 0, .1);
+    height: 600px;
+    max-width: 950px;
+    transition: all 1s ease;
+    margin: 12px;
+}
+.informacion{
+    width:40% ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(58, 175, 169);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.info{
+    width: 100%;
+    padding: 0 25px;
+}
+.info h2{
+    font-size: 2.5em;
+    color: #feffff;
+}
+.info p{
+    color: #17242a;
+    margin: 15px 0;
+}
+.info input{
+    background-color: transparent;
+    outline: none; 
+    border: solid 2px rgb(23, 36, 42);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(23, 36, 42);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.info input:hover{
+    background-color: rgb(23, 36, 42);
+    color: white;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, .1);
+}
+.login{
+    width: 60%;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.login-form{
+    padding: 0 30px;
+}
+.login-form h2{
+    font-size: 2.5em;
+    color: #17242a;
+}
+.login-form p {
+    color: #17242a;
+    margin: 15px 0;
+}
+.icon{
+    margin: 15px 0;
+}
+.icon i{
+    border-radius: 50%;
+    color: rgb(58, 175, 169);
+    cursor: pointer;
+    transition: color .3s ease;
+    padding: 15px;
+    margin: 0 15px;
+    box-shadow: 0px 5px 7px rgb(0, 0, 0, .1);
+}
+.icon i:hover{
+    color: white;
+    background-color: rgb(23, 36, 42);
+}
+.form{
+    margin: 30px 0 0 0;
+}
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, .1);
+}
+.form label input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+    background-color: white;
+}
+.form label i{
+    color: #7a7a7a;
+}
+.form input[type="submit"]{
+    background-color: rgb(58, 175, 169);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, .1);
+}
+.form input[type="submit"]:hover{
+    background-color: rgb(23, 36, 42);
+}
+
+.hide{
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+@media screen and (max-width: 750px){
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 580px){
+    html{
+        font-size: 10px;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .informacion{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        padding: 20px;
+    }
+    .login{
+        width: 100%;
+        padding: 20px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+}
